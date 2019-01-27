@@ -2,6 +2,12 @@
 
 This is the repository for Stellaron Language, where players can contribute with translations for their own language.
 
+You can use the file [english.php (click to view)](https://github.com/Qwatayean/stellaron-lang/blob/master/english.php) since it's up to date with current game.
+
+We recommend you to use [Notepad++](https://notepad-plus-plus.org/download/)
+
+You are free to pull-request your language changes.
+
 ### Code structure
 
 ```markdown
