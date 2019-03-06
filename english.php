@@ -52,6 +52,7 @@ $LNG['err_mothership_12'] = 'This module can not be sold since you do not have i
 $LNG['err_mothership_13'] = 'This module has been sold for %s units of Dark Matter.';
 $LNG['err_mothership_14'] = 'Either your mothership or ancient cannon are under attack. For this reason you can not change the modules.';
 $LNG['err_mothership_15'] = 'You have not selected which type of custom ship you want to build.';
+$LNG['err_mothership_16'] = 'This module does not exist on your inventory';
 ###### Text
 $LNG['module'] = "Module";
 $LNG['nomodule'] = "No module installed";
@@ -63,6 +64,7 @@ $LNG['page_mothership_equipped'] = "Equipped";
 $LNG['page_mothership_install'] = "Install";
 $LNG['page_mothership_scrap'] = "Scrap";
 $LNG['page_mothership_scrap_title'] = "Scrap for resources";
+$LNG['page_mothership_not_found'] = "This module can not be found because it has been discontinued.";
 $LNG['page_mothership_find_module_tech'] = "To find this module on expeditions, requires Ancient Tech %s or higher";
 $LNG['page_mothership_find_module_event'] = "This module can only be acquired through events";
 $LNG['page_mothership_miss_tech'] = "No technology";
@@ -70,20 +72,28 @@ $LNG['page_mothership_module_costAfter'] = "Adds to the ship";
 $LNG['page_mothership_module_costInstall'] = "Cost to install";
 $LNG['page_mothership_module_weapons'] = "Weapons";
 $LNG['page_mothership_module_weapons_desc'] = "This module consists which type of weapons your ship uses.";
-$LNG['page_mothership_module_reactor'] = "Reactor";
-$LNG['page_mothership_module_reactor_desc'] = "Each module of Mothership costs energy and you will need a reactor to support the energy requirements.";
 $LNG['page_mothership_module_engine'] = "Engine";
 $LNG['page_mothership_module_engine_desc'] = "This module modifies the engine type you will use, the speed of your ship and its consumption.";
-$LNG['page_mothership_module_armor'] = "Armor";
-$LNG['page_mothership_module_armor_desc'] = "This module grants you hull and it defines the capacity of your Mothership.";
-$LNG['page_mothership_module_shield'] = "Shield";
-$LNG['page_mothership_module_shield_desc'] = "This module is required in order to protect the hull.";
 $LNG['page_mothership_module_auxiliary'] = "Auxiliary";
 $LNG['page_mothership_module_auxiliary_desc'] = "This module allows you to unlock bonuses with Mothership, such new missions.";
 $LNG['page_mothership_module_ancienttech'] = "This page shows the possible modules you can find through Expedition mission. In order to increase the variety of modules, you must upgrade your Ancient Tech";
 $LNG['page_mothership_module_expedition'] = "To acquire this module, you must first find it in Expedition mission";
 $LNG['page_mothership_module_notech'] = "You do not have enough technology to earn this module";
 $LNG['page_mothership_module_equipped'] = "This module is currently equipped in your Mothership";
+$LNG['page_mothership_bonus_cost901'] = "%s&#37; Metal cost to build";
+$LNG['page_mothership_bonus_cost902'] = "%s&#37; Crystal cost to build";
+$LNG['page_mothership_bonus_cost903'] = "%s&#37; Deuterium cost to build";
+$LNG['page_mothership_bonus_energy'] = "%s&#37; Energy";
+$LNG['page_mothership_bonus_defend'] = "%s&#37; Shield";
+$LNG['page_mothership_bonus_attack'] = "%s&#37; Attack";
+$LNG['page_mothership_bonus_consumption'] = "%s&#37; Ship consumption";
+$LNG['page_mothership_bonus_speed'] = "%s&#37; Ship speed";
+$LNG['page_mothership_bonus_rapidfire'] = "%s&#37; Rapidfire";
+$LNG['page_mothership_bonus_upkeep'] = "%s&#37; Upkeep";
+$LNG['page_mothership_bonus_evasion'] = "%s&#37; Ship Evasion";
+$LNG['page_mothership_bonus_critc'] = "%s&#37; Critical chance";
+$LNG['page_mothership_bonus_crith'] = "%s&#37; Critical hit";
+$LNG['page_mothership_bonus_hull'] = "%s&#37; Ship integrity";
 ###### Modules
 $LNG['engine'] = "Engine";
 $LNG['shield'] = "Shield";
@@ -164,53 +174,8 @@ $LNG['ship_part_swarm_strike_craft_1'] = "Swarm Strikes";
 $LNG['ship_part_point_defense_1'] = "Sentinel Point-Defense";
 $LNG['ship_part_point_defense_2'] = "Barrier Point-Defense";
 $LNG['ship_part_point_defense_3'] = "Guardian Point-Defense";
-$LNG['ship_part_reactor_1'] = "Fission Reactor";
-$LNG['ship_part_reactor_2'] = "Fusion Reactor";
-$LNG['ship_part_reactor_3'] = "Cold Fusion Reactor";
-$LNG['ship_part_reactor_4'] = "Antimatter Reactor";
-$LNG['ship_part_reactor_5'] = "Zero-Point Reactor";
-$LNG['ship_part_hyper_drive_1'] = "Hyperlane Reactor";
-$LNG['ship_part_hyper_drive_2'] = "Hyperlane Breach Points";
-$LNG['ship_part_hyper_drive_3'] = "Hyperspace Reactor";
-$LNG['ship_part_enigmatic_power_core'] = "Enigmatic Power Core";
-$LNG['ship_part_armor_1_defense'] = "Nanocomposite Armor";
-$LNG['ship_part_armor_2_defense'] = "Ceramo-Metal Armor";
-$LNG['ship_part_armor_3_defense'] = "Plasteel Armor";
-$LNG['ship_part_armor_4_defense'] = "Durasteel Armor";
-$LNG['ship_part_armor_5_defense'] = "Neutronium Armor";
-$LNG['ship_part_dragon_armor_defense'] = "Dragonscale Armor";
-$LNG['ship_part_armor_1_shipyard'] = "Nanocomposite Armor";
-$LNG['ship_part_armor_2_shipyard'] = "Ceramo-Metal Armor";
-$LNG['ship_part_armor_3_shipyard'] = "Plasteel Armor";
-$LNG['ship_part_armor_4_shipyard'] = "Durasteel Armor";
-$LNG['ship_part_armor_5_shipyard'] = "Neutronium Armor";
-$LNG['ship_part_dragon_armor_shipyard'] = "Dragonscale Armor";
-$LNG['ship_part_shield_1'] = "Deflectors";
-$LNG['ship_part_shield_2'] = "Improved Deflectors";
-$LNG['ship_part_shield_3'] = "True Shields";
-$LNG['ship_part_shield_4'] = "Advanced Shields";
-$LNG['ship_part_shield_5'] = "Hyper Shields";
-$LNG['ship_part_enigmatic_shield'] = "Enigmatic Deflectors";
-$LNG['ship_part_psi_shield'] = "Psionic Shields";
-$LNG['ship_part_crystal_armor_1'] = "Crystal-Infused Plating";
-$LNG['ship_part_crystal_armor_2'] = "Crystal-Forged Plating";
-$LNG['ship_part_auto_repair'] = "Regenerative Hull Tissue";
-$LNG['ship_part_shield_recharger'] = "Shield Capacitors";
-$LNG['ship_part_afterburners_1'] = "Afterburners";
-$LNG['ship_part_afterburners_2'] = "Advanced Afterburners";
-$LNG['ship_part_enigmatic_encoder'] = "Enigmatic Encoder";
-$LNG['ship_part_enigmatic_decoder'] = "Enigmatic Decoder";
-$LNG['ship_part_aura_shield_dampener'] = "Shield Capacitors";
-$LNG['ship_part_aura_shield_recharger'] = "Capacitor Fields";
-$LNG['ship_part_enigmatic_disruption_field'] = "Enigmatic Disruption Field";
-$LNG['ship_part_archeology_lab'] = "Archeology Lab";
-$LNG['ship_part_curator_lab'] = "Extradimensional Lab";
-$LNG['ship_part_science_lab_1'] = "Exploration Lab";
-$LNG['ship_part_computer_aggressive_basic'] = "Computer Basic Aggressive Behaviour";
-$LNG['ship_part_computer_aggressive_advanced'] = "Computer Advanced Aggressive Behaviour";
-$LNG['ship_part_computer_defensive_basic'] = "Computer Basic Defensive Behaviour";
-$LNG['ship_part_computer_defensive_advanced'] = "Computer Advanced Defensive Behaviour";
-$LNG['ship_part_computer_pregoc'] = "Computer Stealth Behaviour";
+
+
 $LNG['ship_part_psi_jump_drive_1'] = "Psionic Reversion";
 $LNG['ship_part_border_extruder_1'] = "Energetic Laws I";
 $LNG['ship_part_border_extruder_2'] = "Energetic Laws II";
@@ -246,22 +211,176 @@ $LNG['ship_part_dragon_breath'] = "Ether Breath";
 $LNG['ship_part_dragon_shield'] = "Ether Shield";
 $LNG['h_space_dragon'] = "Ether Hull";
 $LNG['h_space_dragon_custom'] = "+10% Attack";
-# Enigmatic Fortress
-$LNG['ship_part_enigmatic_attack'] = "Enigmatic Weapon Core";
-$LNG['ship_part_enigmatic_attack_custom'] = "+25% Attack";
-$LNG['ship_part_enigmatic_consumption'] = "Enigmatic Deuterium Core";
-$LNG['ship_part_enigmatic_consumption_custom'] = "-25% Consumption";
-$LNG['ship_part_enigmatic_energy'] = "Enigmatic Reactor Core";
-$LNG['ship_part_enigmatic_energy_custom'] = "+25% Energy";
-$LNG['ship_part_enigmatic_shield'] = "Enigmatic Shield Core";
-$LNG['ship_part_enigmatic_shield_custom'] = "+25% Shield";
-$LNG['ship_part_enigmatic_special'] = "Enigmatic Stabilizer";
-$LNG['ship_part_enigmatic_special_custom'] = "+10% Bonus on Enigmatic-class modules";
-$LNG['h_enigmatic_fortress'] = "Enigmatic Fortress";
-$LNG['h_enigmatic_fortress_custom'] = "+100% Shield";
 # Crafted Modules
 $LNG['C_ship_part_arc_emitter_3'] = "Vexed Arc Emitter";
 $LNG['C_ship_part_arc_emitter_4'] = "Concerted Arc Emitter";
+
+# UPDATE
+# Class
+$LNG['ship_basic_template'] = "Research Hull";
+$LNG['hull_ancient_mothership'] = "Ancient Mothership";
+$LNG['hull_space_dragon'] = "Ether Hull";
+$LNG['hull_arthopoid'] = "Arthopoid Class";
+$LNG['hull_avian'] = "Avian Class";
+$LNG['hull_fungoid'] = "Fungoid Class";
+$LNG['hull_humanoid'] = "Humanoid Class";
+$LNG['hull_mammalian'] = "Mammalian Class";
+$LNG['hull_molluscoid'] = "Molluscoid Class";
+$LNG['hull_plantoid'] = "Plantoid Class";
+$LNG['hull_reptilian'] = "Reptilian Class";
+$LNG['hull_reptilian'] = "Reptilian Class";
+$LNG['hull_kurogane'] = "Kurogane Class";
+$LNG['hull_sg_anubis_hatak'] = "Anubis Ha'Tak";
+$LNG['hull_sg_anubis_mothership'] = "Anubis Mothership";
+$LNG['hull_sg_tauri'] = "Tau'ri Dreadnought";
+$LNG['hull_sg_asuran_dreadnought'] = "Asuran Dreadnought";
+$LNG['hull_sg_wrath_station'] = "Wrath Warstation";
+$LNG['hull_caravaneer'] = "Caravanner";
+$LNG['hull_dreadnought'] = "Dreadnought";
+$LNG['hull_pirate_corvette'] = "Pirate Corvette";
+$LNG['hull_pirate_cruiser'] = "Pirate Cruiser";
+$LNG['hull_pirate_destroyer'] = "Pirate Destroyer";
+$LNG['hull_fallen_empire_warship'] = "Fallen Empire Warship";
+$LNG['hull_fallen_empire_station'] = "Fallen Empire Warstation";
+$LNG['hull_voidspawn'] = "Voidspawn";
+$LNG['hull_sith_centurion'] = "Centurion";
+$LNG['hull_sith_devastator'] = "Devastator";
+$LNG['hull_sith_leviathan'] = "Leviathan";
+$LNG['hull_sith_raptor'] = "Raptor";
+$LNG['hull_sith_sadow'] = "Sadow";
+$LNG['hull_orep_cannon'] = "Old Republic Cannon";
+
+# Armor
+$LNG['page_mothership_module_armor'] = "Armor";
+$LNG['page_mothership_module_armor_desc'] = "This module grants you hull and it defines the capacity of your Mothership.";
+$LNG['ship_part_armor_1_defense'] = "(Old) Nanocomposite Armor";
+$LNG['ship_part_armor_2_defense'] = "(Old) Ceramo-Metal Armor";
+$LNG['ship_part_armor_3_defense'] = "(Old) Plasteel Armor";
+$LNG['ship_part_armor_4_defense'] = "(Old) Durasteel Armor";
+$LNG['ship_part_armor_5_defense'] = "(Old) Neutronium Armor";
+$LNG['ship_part_dragon_armor_defense'] = "(Old) Dragonscale Armor (Custom defense)";
+$LNG['ship_part_armor_1_shipyard'] = "(Old) Nanocomposite Armor";
+$LNG['ship_part_armor_2_shipyard'] = "(Old) Ceramo-Metal Armor";
+$LNG['ship_part_armor_3_shipyard'] = "(Old) Plasteel Armor";
+$LNG['ship_part_armor_4_shipyard'] = "(Old) Durasteel Armor";
+$LNG['ship_part_armor_5_shipyard'] = "(Old) Neutronium Armor";
+$LNG['ship_part_dragon_armor_shipyard'] = "(Old) Dragonscale Armor (Custom ship)";
+$LNG['ship_part_armor_1'] = "Nanocomposite Armor";
+$LNG['ship_part_armor_1_custom'] = "This module grants Shield when installed on custom defense";
+$LNG['ship_part_armor_2'] = "Ceramo-Metal Armor";
+$LNG['ship_part_armor_2_custom'] = "This module grants Shield when installed on custom defense";
+$LNG['ship_part_armor_3'] = "Plasteel Armor";
+$LNG['ship_part_armor_3_custom'] = "This module grants Shield when installed on custom defense";
+$LNG['ship_part_armor_4'] = "Durasteel Armor";
+$LNG['ship_part_armor_4_custom'] = "This module grants Shield when installed on custom defense";
+$LNG['ship_part_armor_5'] = "Neutronium Armor";
+$LNG['ship_part_armor_5_custom'] = "This module grants Shield when installed on custom defense";
+$LNG['ship_part_dragon_armor'] = "Dragonscale Armor";
+$LNG['ship_part_dragon_armor_custom'] = "This module grants Shield when installed on custom defense";
+$LNG['ship_part_craft_armor_shield_1'] = "Shield-Generating Armor";
+$LNG['ship_part_craft_armor_shield_2'] = "Improved Shield-Generating Armor";
+$LNG['ship_part_craft_armor_shield_3'] = "Shielding Bulwark";
+$LNG['ship_part_craft_armor_6'] = "Improved Neutronium Armor";
+$LNG['ship_part_craft_armor_6_custom'] = "This module grants Shield when installed on custom defense";
+$LNG['ship_part_craft_armor_7'] = "Adamantium Armor";
+$LNG['ship_part_craft_armor_7_custom'] = "This module grants Shield when installed on custom defense";
+$LNG['ship_part_nano_armor_1'] = "Nano-material Armor";
+$LNG['ship_part_nano_armor_2'] = "Improved Nano-material Armor";
+$LNG['ship_part_craft_armor_horror'] = "Dimensional Horror Armor";
+
+# Auxiliary
+$LNG['ship_basic_auxiliary'] = "Empty Module Slot";
+$LNG['ship_part_crystal_armor_1'] = "Crystal-Infused Plating";
+$LNG['ship_part_crystal_armor_2'] = "Crystal-Forged Plating";
+$LNG['ship_part_auto_repair'] = "Regenerative Hull Tissue";
+$LNG['ship_part_shield_recharger'] = "Shield Capacitors";
+$LNG['ship_part_afterburners_1'] = "Afterburners";
+$LNG['ship_part_afterburners_2'] = "Advanced Afterburners";
+$LNG['ship_part_enigmatic_encoder'] = "Enigmatic Encoder";
+$LNG['ship_part_enigmatic_decoder'] = "Enigmatic Decoder";
+$LNG['ship_part_aura_shield_dampener'] = "Shield Capacitors";
+$LNG['ship_part_aura_shield_recharger'] = "Capacitor Fields";
+$LNG['ship_part_enigmatic_disruption_field'] = "Enigmatic Disruption Field";
+$LNG['ship_part_archeology_lab'] = "Archeology Lab";
+$LNG['ship_part_archeology_lab_custom'] = "Find better modules above your Ancient Tech requirement on Expedition";
+$LNG['ship_part_curator_lab'] = "Extradimensional Lab";
+$LNG['ship_part_curator_lab_custom'] = "Find unique ships that can not be seen around the universe on Expedition";
+$LNG['ship_part_science_lab_1'] = "Exploration Lab";
+$LNG['ship_part_science_lab_1_custom'] = "You to get a multiplier from rewards on Expedition";
+$LNG['ship_part_computer_aggressive_basic'] = "Computer Basic Aggressive Behaviour";
+$LNG['ship_part_computer_aggressive_advanced'] = "Computer Advanced Aggressive Behaviour";
+$LNG['ship_part_computer_defensive_basic'] = "Computer Basic Defensive Behaviour";
+$LNG['ship_part_computer_defensive_advanced'] = "Computer Advanced Defensive Behaviour";
+$LNG['ship_part_computer_pregoc'] = "Computer Stealth Behaviour";
+$LNG['ship_part_energy_damage_booster_1'] = "Improved Collators";
+$LNG['ship_part_energy_damage_booster_2'] = "Advanced Collators";
+$LNG['ship_part_energy_damage_booster_3'] = "Superior Collators";
+$LNG['ship_part_energy_fire_rate_booster_1'] = "Insulated Heat Transfer Conduits";
+$LNG['ship_part_energy_fire_rate_booster_2'] = "Enhanced Heat Transfer Conduits";
+$LNG['ship_part_energy_fire_rate_booster_3'] = "Superior Heat Transfer Conduits";
+$LNG['ship_part_reinforced_shield_1'] = "Shield Integrity Booster";
+$LNG['ship_part_reinforced_shield_2'] = "Enhanced Shield Integrity Booster";
+$LNG['ship_part_reinforced_shield_3'] = "Superior Shield Integrity Booster";
+
+# Properties
+$LNG['page_mothership_attr_attack'] = 'Attack';
+$LNG['page_mothership_attr_defend'] = 'Shield';
+$LNG['page_mothership_attr_capacity'] = 'Cargo capacity';
+$LNG['page_mothership_attr_consumption'] = 'Consumption';
+$LNG['page_mothership_attr_speed'] = 'Speed';
+$LNG['page_mothership_attr_901'] = 'Metal';
+$LNG['page_mothership_attr_902'] = 'Crystal';
+$LNG['page_mothership_attr_903'] = 'Deuterium';
+$LNG['page_mothership_attr_cost901'] = 'Metal';
+$LNG['page_mothership_attr_cost902'] = 'Crystal';
+$LNG['page_mothership_attr_cost903'] = 'Deuterium';
+$LNG['page_mothership_attr_cost911'] = 'Energy';
+$LNG['page_mothership_attr_energy'] = 'Energy';
+$LNG['page_mothership_attr_speedTech'] = 'Engine';
+$LNG['page_mothership_attr_engine_1'] = 'Combustion';
+$LNG['page_mothership_attr_engine_2'] = 'Impulse';
+$LNG['page_mothership_attr_engine_3'] = 'Hyperspace';
+$LNG['page_mothership_attr_rapidfire'] = 'Rapidfire';
+$LNG['page_mothership_attr_upkeep'] = 'Ship Maintenance';
+
+
+# Reactors
+$LNG['page_mothership_module_reactor'] = "Reactor";
+$LNG['page_mothership_module_reactor_desc'] = "Each module of Mothership costs energy and you will need a reactor to support the energy requirements.";
+$LNG['ship_part_reactor_1'] = "Fission Reactor";
+$LNG['ship_part_reactor_2'] = "Fusion Reactor";
+$LNG['ship_part_reactor_3'] = "Cold Fusion Reactor";
+$LNG['ship_part_reactor_4'] = "Antimatter Reactor";
+$LNG['ship_part_reactor_5'] = "Zero-Point Reactor";
+$LNG['ship_part_hyper_drive_1'] = "Hyperlane Reactor";
+$LNG['ship_part_hyper_drive_2'] = "Hyperlane Breach Points";
+$LNG['ship_part_hyper_drive_3'] = "Hyperspace Reactor";
+$LNG['ship_part_enigmatic_power_core'] = "Enigmatic Power Core";
+$LNG['ship_part_craft_reactor_6'] = "Dimentional Reactor";
+$LNG['ship_part_craft_reactor_7'] = "Naquadria Reactor";
+$LNG['ship_part_craft_reactor_8'] = "Gravity-Wave Reactor";
+$LNG['ship_part_craft_deuterium_reactor'] = "Singularity Reactor";
+$LNG['ship_part_craft_darkmatter_reactor'] = "Dark Matter Reactor";
+
+# Shield
+$LNG['page_mothership_module_shield'] = "Shield";
+$LNG['page_mothership_module_shield_desc'] = "This module is required in order to protect the hull.";
+$LNG['ship_part_shield_1'] = "Deflectors";
+$LNG['ship_part_shield_2'] = "Improved Deflectors";
+$LNG['ship_part_shield_3'] = "True Shields";
+$LNG['ship_part_shield_4'] = "Advanced Shields";
+$LNG['ship_part_shield_5'] = "Hyper Shields";
+$LNG['ship_part_enigmatic_shield'] = "Enigmatic Deflectors";
+$LNG['ship_part_psi_shield'] = "Psionic Shields";
+$LNG['ship_part_craft_shield_6'] = "Stasis Shields";
+$LNG['ship_part_craft_shield_7'] = "Omni Shields";
+
+# Weapons
+$LNG['ship_part_craft_tiyanki_cannon'] = "Tiyanki Beam";
+$LNG['ship_part_craft_autocannon_4'] = "Improved Stormfire Autocannon";
+$LNG['ship_part_craft_autocannon_5'] = "Shredder Autocannon";
+$LNG['ship_part_mining_drone_laser_1_custom'] = "When installed, the production of planet where your ship is stationed is boosted by 0.1%, up to 50%";
+
 
 ###################################
 ###################################
@@ -272,24 +391,66 @@ $LNG['button_overview_PlanetFields'] = "Fields";
 ###### Error
 $LNG['err_bm_notexist'] = "This feature does not exist";
 ###### Text
+# Planets
+$LNG['lm_bm_cat_Planet'] = "Modify your Planets";
 $LNG['lm_bm_PlanetMoon'] = "Moon Maker";
+$LNG['lm_bm_PlanetMoon_short'] = "Create Moon";
 $LNG['lm_bm_PlanetMoon_desc'] = "Suicide mercenaries from Rebellion Order will self-destruct in your planet orbit in order to create a Moon.";
-$LNG['lm_bm_blackList_err_1'] = "Only in Planets without a moon.";
+$LNG['lm_bm_PlanetMoon_error'] = "Only in Planets without a moon.";
 $LNG['lm_bm_PlanetFields'] = "Underground Homes";
+$LNG['lm_bm_PlanetFields_short'] = "+50 fields";
 $LNG['lm_bm_PlanetFields_desc'] = "Additional slaves from Intergalactic Prison will work in your planet to increase 50 fields. ";
-$LNG['lm_bm_blackList_err_2'] = "This can only be used on Planets";
-$LNG['lm_bm_blackList_3'] = "Mega-structure Wormhole";
-$LNG['lm_bm_blackList_desc_3'] = "Reduce 35% of current time on Mega-structure creation mission.";
-$LNG['lm_bm_blackList_err_3'] = "";
-$LNG['lm_bm_blackList_4'] = "Research Amplifier";
-$LNG['lm_bm_blackList_desc_4'] = "Reduce 35% of current time on Research.";
-$LNG['lm_bm_blackList_err_4'] = "Research must take longer than a minute to finish";
-$LNG['lm_bm_blackList_5'] = "Building Amplifier";
-$LNG['lm_bm_blackList_desc_5'] = "Reduce 50% of current time on Building.";
-$LNG['lm_bm_blackList_err_5'] = "Building must take longer than a minute to finish";
-$LNG['lm_bm_blackList_6'] = "Terraform Amplifier";
-$LNG['lm_bm_blackList_desc_6'] = "Reduce 35% of current time on Terraforming.";
-$LNG['lm_bm_blackList_err_6'] = "Terraform time must take longer than a minute to finish";
+$LNG['lm_bm_PlanetFields_error'] = "This can only be used on Planets";
+# Metal
+$LNG['lm_bm_cat_Metal'] = "Mineral Boost (7 day)";
+$LNG['lm_bm_MetalBronzePack'] = "Bronze Metal Boost";
+$LNG['lm_bm_MetalBronzePack_short'] = "+ 10% total production on this planet";
+$LNG['lm_bm_MetalBronzePack_desc'] = "This will boost your total Metal Production (Mine production, Biome, System and Officiers) on this planet";
+$LNG['lm_bm_MetalBronzePack_error'] = "There is a better bonus already active or you are not in a planet.";
+$LNG['lm_bm_MetalSilverPack'] = "Silver Metal Boost";
+$LNG['lm_bm_MetalSilverPack_short'] = "+ 20% total production on this planet";
+$LNG['lm_bm_MetalSilverPack_desc'] = "This will boost your total Metal Production (Mine production, Biome, System and Officiers) on this planet";
+$LNG['lm_bm_MetalSilverPack_error'] = "There is a better bonus already active or you are not in a planet.";
+$LNG['lm_bm_MetalGoldPack'] = "Gold Metal Boost";
+$LNG['lm_bm_MetalGoldPack_short'] = "+ 30% total production on this planet";
+$LNG['lm_bm_MetalGoldPack_desc'] = "This will boost your total Metal Production (Mine production, Biome, System and Officiers) on this planet";
+# Crystal
+$LNG['lm_bm_cat_Crystal'] = "Semi-Crystal Boost (7 day)";
+$LNG['lm_bm_CrystalBronzePack'] = "Bronze Crystal Boost";
+$LNG['lm_bm_CrystalBronzePack_short'] = "+ 10% total production on this planet";
+$LNG['lm_bm_CrystalBronzePack_desc'] = "This will boost your total Crystal Production (Mine production, Biome, System and Officiers) on this planet";
+$LNG['lm_bm_CrystalBronzePack_error'] = "There is a better bonus already active or you are not in a planet.";
+$LNG['lm_bm_CrystalSilverPack'] = "Silver Crystal Boost";
+$LNG['lm_bm_CrystalSilverPack_short'] = "+ 20% total production on this planet";
+$LNG['lm_bm_CrystalSilverPack_desc'] = "This will boost your total Crystal Production (Mine production, Biome, System and Officiers) on this planet";
+$LNG['lm_bm_CrystalSilverPack_error'] = "There is a better bonus already active or you are not in a planet.";
+$LNG['lm_bm_CrystalGoldPack'] = "Gold Crystal Boost";
+$LNG['lm_bm_CrystalGoldPack_short'] = "+ 30% total production on this planet";
+$LNG['lm_bm_CrystalGoldPack_desc'] = "This will boost your total Crystal Production (Mine production, Biome, System and Officiers) on this planet";
+# Deuterium
+$LNG['lm_bm_cat_Deuterium'] = "Fuel Boost (7 day)";
+$LNG['lm_bm_DeuteriumBronzePack'] = "Bronze Deuterium Boost";
+$LNG['lm_bm_DeuteriumBronzePack_short'] = "+ 10% total production on this planet";
+$LNG['lm_bm_DeuteriumBronzePack_desc'] = "This will boost your total Deuterium Production (Mine production, Biome, System and Officiers) on this planet";
+$LNG['lm_bm_DeuteriumBronzePack_error'] = "There is a better bonus already active or you are not in a planet.";
+$LNG['lm_bm_DeuteriumSilverPack'] = "Silver Deuterium Boost";
+$LNG['lm_bm_DeuteriumSilverPack_short'] = "+ 20% total production on this planet";
+$LNG['lm_bm_DeuteriumSilverPack_desc'] = "This will boost your total Deuterium Production (Mine production, Biome, System and Officiers) on this planet";
+$LNG['lm_bm_DeuteriumSilverPack_error'] = "There is a better bonus already active or you are not in a planet.";
+$LNG['lm_bm_DeuteriumGoldPack'] = "Gold Deuterium Boost";
+$LNG['lm_bm_DeuteriumGoldPack_short'] = "+ 30% total production on this planet";
+$LNG['lm_bm_DeuteriumGoldPack_desc'] = "This will boost your total Deuterium Production (Mine production, Biome, System and Officiers) on this planet";
+# Deuterium
+$LNG['lm_bm_cat_TimeSave'] = "Time Savers";
+$LNG['lm_bm_BuildingTime'] = "Accelerate Building";
+$LNG['lm_bm_BuildingTime_short'] = "Accelerate 50% current Building";
+$LNG['lm_bm_BuildingTime_desc'] = "This feature allows you to speed up the construction time of a building by 50% of it's initial construction time.";
+$LNG['lm_bm_BuildingTime_error'] = "Currently there are no building under development";
+$LNG['lm_bm_ResearchTime'] = "Accelerate Research";
+$LNG['lm_bm_ResearchTime_short'] = "Accelerate 50% current Research";
+$LNG['lm_bm_ResearchTime_desc'] = "This feature allows you to speed up the construction time of a research by 50% of it's initial construction time.";
+$LNG['lm_bm_ResearchTime_error'] = "Currently there are no research under development";
+
 
 ###################################
 ###################################
@@ -426,8 +587,9 @@ $LNG['page_fleetTable_template_desc'] = 'Now you can quickly define which ships 
 ###### Custom
 # Additional Missions
 $LNG['type_mission_21']  		= "Conquest";
-$LNG['type_mission_41']  		= "Attack";
-$LNG['type_mission_42']  		= "Event: Enigmatic Fortress";
+$LNG['type_mission_41']  		= "Attack Space Dragon";
+$LNG['type_mission_42']  		= "Explore Enigmatic Fortress";
+$LNG['type_mission_43']  		= "Attack Pirate Station";
 $LNG['type_mission_54']  		= "Create Ringworld";
 $LNG['type_mission_55']  		= "Create Habitat Ship";
 $LNG['type_mission_56']  		= "Create Dyson Sphere";
@@ -447,9 +609,9 @@ $LNG['help_fleetTable2_9']	= "Destroy the enemy moon. Requires Battle Fortress. 
 $LNG['help_fleetTable2_11']	= "Send Dark Matter Collector ship from your moon to expedition position.";
 $LNG['help_fleetTable2_15']	= "Try your luck exploring the depths of the galaxy";
 $LNG['help_fleetTable2_17']	= "Your fleet and resources will be sent to the target planet/user";
-$LNG['help_fleetTable2_21']	= "Fight to conquer the target planet. Requires Interstellar Dominion and target must be a former Fallen Empire colony";
+$LNG['help_fleetTable2_21']	= "Fight to conquer a Fallen Empire colony";
 $LNG['help_fleetTable2_41']	= "Fight against the Space Dragon and attempt to get his rewards";
-$LNG['help_fleetTable2_42']	= "Fight against the Enigmatic Fortress and attempt to get his rewards";
+$LNG['help_fleetTable2_42']	= "Explore the secrets of Enigmatic Fortress";
 $LNG['help_fleetTable2_54']	= "Create a immersive habitable ring with additional resource mines. Requires Megaengineer and Megastructure Engineering (10)";
 $LNG['help_fleetTable2_55']	= "Create a planet-like ship that can move its coordinates. Requires Megaengineer and Megastructure Engineering (2)";
 $LNG['help_fleetTable2_56']	= "Create a capsule around the sun to produce Dark Matter. Requires Megaengineer and Megastructure Engineering (7)";
@@ -503,6 +665,8 @@ $LNG['EventSpaceDragonCronjob_info'] = 'Change coordinates if you have attacked 
 $LNG['EventEnigmaticFortressCronjob_name'] = 'Enigmatic Fortress';
 $LNG['EventEnigmaticFortressCronjob_desc'] = 'The Enigmatic Fortress, sealed for eons, guards various mysterious technologies. On victory, you win one of various rewards.';
 $LNG['EventEnigmaticFortressCronjob_info'] = 'Respawn in %s';
+$LNG['EventPiratesCronjob_name'] = 'Pirate Hunt';
+$LNG['EventPiratesCronjob_desc'] = 'Raid Pirates around the galaxy and take their resources or modules.';
 ###### Text
 $LNG["page_galaxy_expedition"] = "When you run Expedition Mission, you have many events that can be triggered. A random generated number will be generated when your fleet arrives to G:S:9, which will define what will you find";
 $LNG["page_galaxy_meganearby"] = "A player is colonizing a megastructure on this system. We can feel their ships from other dimension";
@@ -569,6 +733,8 @@ $LNG['type_planet_8']  				= "Matter Decompressor";
 $LNG['type_planet_short_8']			= "Decompressor";
 $LNG['type_planet_9']  				= "Strategic Coordinator Center";
 $LNG['type_planet_short_9']			= "SCC";
+$LNG['type_planet_43']				= "unknown Pirate Station";
+$LNG['type_planet_short_43']		= "Pirate";
 $LNG['type_planet_ring']			= "Ringworld";
 $LNG['type_planet_ring_desc']		= "Immense in both radius and scope, Ringworlds encircle their system's star and award their owner unique mines when constructed. The carefully designed ecosystems and finely-tuned atmospheres of their sections offer perfect living conditions towards all residing species, giving inhabitants 100% habitability on the ring world's surface.";
 $LNG['type_planet_habitat']			= "Habitat";
@@ -587,6 +753,95 @@ $LNG['type_planet_strategic_coordination_center_desc']		= "";
 ###### Page: Missions
 $LNG['mission_title'] = "Quests";
 # Achievements
+###### Enigmatic Fortress
+$LNG['mission_event_enigmatic_fortress'] = "Enigmatic Fortress";
+# The Search
+$LNG['mission_event_enigmatic_fortress_0'] = "The Search";
+$LNG['mission_event_enigmatic_fortress_0_desc_0'] = "It is the kind of absurd, massive and self-perpetuating construction that you don't see built anymore. Whoever built it, they must have been fond of puzzles and enigmas. The only items recovered from the fortress in the past are metal shapes used in contraptions inside, to be rearranged to some satisfactory solutions. Those who brought them back did so because they failed and barely escaped with their lives. Many others didn't.";
+$LNG['mission_event_enigmatic_fortress_0_0'] = "Find the Enigmatic Fortress on the galaxy. After exploring it, make your decision.";
+$LNG['mission_event_enigmatic_fortress_0_choice_1'] = "You have chosen to send a specialist. Send one Megaengineer to the Enigmatic Fortress.";
+$LNG['mission_event_enigmatic_fortress_0_choice_2'] = "You have chosen to send a demolition team. Send one Avatar to the Enigmatic Fortress.";
+# The Entrance
+$LNG['mission_event_enigmatic_fortress_1'] = "The Entrance";
+$LNG['mission_event_enigmatic_fortress_1_desc_0'] = "Your team are waiting for a decision. Shall we send a Megaengineer or an Avatar to the Enigmatic Fortress?";
+$LNG['mission_event_enigmatic_fortress_1_desc_1'] = "Having picked apart its defenses, we soon insinuated ourself into the structure.\n\nIts labyrinthine corridors and dense networks both prove equally alien and impenetrable. There is little for us here, but the fortress could still pose a threat.";
+$LNG['mission_event_enigmatic_fortress_1_desc_2'] = "Having picked apart its defenses, we soon insinuated ourself into the structure.\n\nIts labyrinthine corridors and dense networks both prove equally alien and impenetrable. There is little for us here, but the fortress could still pose a threat.";
+$LNG['mission_event_enigmatic_fortress_1_0'] = "Check your expedition report on Messages.";
+$LNG['mission_event_enigmatic_fortress_1_1'] = "Send a Megaengineer to the Enigmatic Fortress.";
+$LNG['mission_event_enigmatic_fortress_1_2'] = "Send an Avatar to the Enigmatic Fortress.";
+$LNG['mission_event_enigmatic_fortress_1_choice_1'] = "You have chosen go with the higher estimate. Run expedition to Enigmatic Fortress.";
+$LNG['mission_event_enigmatic_fortress_1_choice_2'] = "You have chosen go with the lower estimate. Run expedition to Enigmatic Fortress.";
+# The Entrance
+$LNG['mission_event_enigmatic_fortress_2'] = "The Entrance";
+$LNG['mission_event_enigmatic_fortress_2_desc_0'] = "Your team are waiting for a decision. The leader of the explorers describes it as three upright poles spaced equidistant across the top of the pedestal, with three rings - metal tori - of varying sizes placed around the leftmost pole, the smallest at the top and the largest at the bottom.";
+$LNG['mission_event_enigmatic_fortress_2_desc_1'] = "Despite the ages of technology separating us and the builders of the fortress, one invention is timeless: a closed door. After having forced the fortress to shut down, we found all entrances sealed.\n\nThe team dispatched to explore the fortress have found an airlock which at least appears possible to open from the outside, if it had been in working order. The explorers enter the fortress.";
+$LNG['mission_event_enigmatic_fortress_2_desc_2'] = "The detonation set to blow the airlock open went off as planned, providing an entrance for our team of explorers. However, the explosives were not the only thing to ignite. For reasons unknown, possibly as a deliberate trap, the airlock contained pressurized explosive gas in addition to the expected oxygen, causing a larger explosion that wiped out the demolitions team sent to set it up.";
+$LNG['mission_event_enigmatic_fortress_2_0'] = "Check your expedition report on Messages.";
+$LNG['mission_event_enigmatic_fortress_2_1'] = "Send expedition to Enigmatic Fortress with high voltage battery";
+$LNG['mission_event_enigmatic_fortress_2_2'] = "Send expedition to Enigmatic Fortress with low voltage battery";
+$LNG['mission_event_enigmatic_fortress_2_choice_1'] = "You have chosen to place metal rings around the remaining two poles. Run expedition to Enigmatic Fortress.";
+$LNG['mission_event_enigmatic_fortress_2_choice_2'] = "You have chosen to search for torus-shaped indentations on the bulkhead. Run expedition to Enigmatic Fortress.";
+$LNG['mission_event_enigmatic_fortress_2_choice_3'] = "You have chosen to rearrange the metal tori on the poles. Run expedition to Enigmatic Fortress.";
+$LNG['mission_event_enigmatic_fortress_2_choice_4'] = "You have chosen to remove center and rightmost poles from the pedestal. Run expedition to Enigmatic Fortress.";
+# The Tower
+$LNG['mission_event_enigmatic_fortress_3'] = "The Tower";
+$LNG['mission_event_enigmatic_fortress_3_desc_1'] = "The leader of the explorers describes it as three upright poles spaced equidistant across the top of the pedestal, with three rings - metal tori - of varying sizes placed around the leftmost pole, the smallest at the top and the largest at the bottom.";
+$LNG['mission_event_enigmatic_fortress_3_desc_2'] = "The leader of the explorers describes it as three upright poles spaced equidistant across the top of the pedestal, with three rings - metal tori - of varying sizes placed around the leftmost pole, the smallest at the top and the largest at the bottom.";
+$LNG['mission_event_enigmatic_fortress_3_desc_3'] = "The leader of the explorers describes it as three upright poles spaced equidistant across the top of the pedestal, with three rings - metal tori - of varying sizes placed around the leftmost pole, the smallest at the top and the largest at the bottom.";
+$LNG['mission_event_enigmatic_fortress_3_desc_4'] = "The leader of the explorers describes it as three upright poles spaced equidistant across the top of the pedestal, with three rings - metal tori - of varying sizes placed around the leftmost pole, the smallest at the top and the largest at the bottom.";
+$LNG['mission_event_enigmatic_fortress_3_1'] = "Send expedition notify the explorer about place metal rings around the remaining two poles.";
+$LNG['mission_event_enigmatic_fortress_3_2'] = "Send expedition notify the explorer about search for torus-shaped indentations on the bulkhead.";
+$LNG['mission_event_enigmatic_fortress_3_3'] = "Send expedition notify the explorer about rearrange the metal tori on the poles.";
+$LNG['mission_event_enigmatic_fortress_3_4'] = "Send expedition notify the explorer about remove center and rightmost poles from the pedestal.";
+# Tower Rebuilt
+$LNG['mission_event_enigmatic_fortress_4'] = "The Tower Rebuilt";
+$LNG['mission_event_enigmatic_fortress_4_desc_1'] = "After the course of action was announced, a moment of silence followed, then vague scraping noises as the team attempted to carry out their plan. A splashing sound, so loud that at first you think the team has been swatted like small insects, is followed by cheers from the team as they report that a passage has opened.\n\nThe bulkhead appears to have rapidly transformed into an unpleasant-smelling liquid reminiscent of purple quicksilver. Combined with the relatively mundane puzzle mechanism, you have a feeling the team has been victims of an elaborate prank set up millennia ago.";
+$LNG['mission_event_enigmatic_fortress_4_1'] = "Your crew is alive. Send another expedition for future reports";
+# The Pivot
+$LNG['mission_event_enigmatic_fortress_5'] = "The Pivot";
+$LNG['mission_event_enigmatic_fortress_5_desc_1'] = "The team reports that they have reached what appears to be the geometric center of the fortress, even if the internal geometry leaves some doubt if the concept of a center is even relevant in there.\n\nWhat is indisputably relevant is how the fortress is powered, which makes the team's new discovery all the more interesting. Dark matter is funneled around the fortress and then back to the core, like a cardiovascular system. Although the flow has stopped, the team has found signs that it's starting again. We can take all the time we want to study it, but it needs to be stopped now.";
+$LNG['mission_event_enigmatic_fortress_5_1'] = "Your crew is alive. Send another expedition for future reports";
+# The Heart of Dark Matter
+$LNG['mission_event_enigmatic_fortress_6'] = "The Heart of Dark Matter";
+$LNG['mission_event_enigmatic_fortress_6_desc_0'] = "Your team are waiting for a decision. Which part of the construction process should we review for answers?";
+$LNG['mission_event_enigmatic_fortress_6_desc_1'] = "Examining a black hole with our new knowledge of how dark matter is used in the ancient fortress, we have discovered that its builders must have learned many of the manipulation and funneling techniques from black holes. Seeing them outside of the strict system they created allowed the team of explorers to change connections around the core safely, stopping the repowering process. While this process alone has taught us much about the physics of black holes, it is nothing compared to the treasure that the now safely shut-down fortress presents.";
+$LNG['mission_event_enigmatic_fortress_6_0'] = "Check your expedition report on Messages.";
+$LNG['mission_event_enigmatic_fortress_6_1'] = "Your crew is alive. Send another expedition for future reports";
+$LNG['mission_event_enigmatic_fortress_6_choice_1'] = "You have chosen to find answers in the beginning. Run expedition to Enigmatic Fortress.";
+$LNG['mission_event_enigmatic_fortress_6_choice_2'] = "You have chosen to find answers in the middle. Run expedition to Enigmatic Fortress.";
+$LNG['mission_event_enigmatic_fortress_6_choice_3'] = "You have chosen to find answers in the end. Run expedition to Enigmatic Fortress.";
+# The Entrance
+$LNG['mission_event_enigmatic_fortress_7'] = "Our Star Witness";
+$LNG['mission_event_enigmatic_fortress_7_desc_1'] = "Scouring the local star for clues to how the fortress was built, we discovered a surprising secret. A fine mist of nanotechnological cameras have been found in close proximity to the star, acting as the eyes of the fortress and explaining the efficiency of its defenses.\n\nAccessing these with data from the fortress, we can view the history of the system all the way back to its construction.";
+$LNG['mission_event_enigmatic_fortress_7_desc_2'] = "Scouring the local star for clues to how the fortress was built, we discovered a surprising secret. A fine mist of nanotechnological cameras have been found in close proximity to the star, acting as the eyes of the fortress and explaining the efficiency of its defenses.\n\nAccessing these with data from the fortress, we can view the history of the system all the way back to its construction.";
+$LNG['mission_event_enigmatic_fortress_7_desc_3'] = "Scouring the local star for clues to how the fortress was built, we discovered a surprising secret. A fine mist of nanotechnological cameras have been found in close proximity to the star, acting as the eyes of the fortress and explaining the efficiency of its defenses.\n\nAccessing these with data from the fortress, we can view the history of the system all the way back to its construction.";
+$LNG['mission_event_enigmatic_fortress_7_1'] = "Send expedition to Enigmatic Fortress to notify the team to check the reports from the beginning.";
+$LNG['mission_event_enigmatic_fortress_7_2'] = "Send expedition to Enigmatic Fortress to notify the team to check the reports from the middle.";
+$LNG['mission_event_enigmatic_fortress_7_3'] = "Send expedition to Enigmatic Fortress to notify the team to check the reports from the end.";
+#
+$LNG['mission_event_enigmatic_fortress_8'] = "The Middle Path";
+$LNG['mission_event_enigmatic_fortress_8_desc_1'] = "The middle section of the footage, although not showing the construction of the core itself, reveals the shipping of materials to the fortress which scientists conclude must have been used for the core. This must have been the critical time at which the structure needed power for construction to continue.\n\nWith knowledge of these materials, the team inside the fortress has managed to stop it from repowering. We can now reap the fruits of our success.";
+$LNG['mission_event_enigmatic_fortress_8_1'] = "Your crew is alive. Send another expedition for future reports";
+# help
+$LNG['mission_event_enigmatic_fortress_help'] = "<table width=\"300px\"><tr><td>This event consists on quest-chain where you will explore an unknown megastructure abandoned in middle of galaxy. At the end of each mission, you will receive a message with what you should do next: make decision or send another expedition. The choices affects how successful you will be on the expedition. Taking wrong decisions can lead you to start from first mission.</td></tr></table>";
+###### Pirate Station
+$LNG['mission_event_pirate'] = "The Pirate Hunt";
+$LNG['mission_event_pirate_desc'] = "Lucrative systems always attracts piracy. There are Pirate Stations around the galaxy warmongering neutral players. Can you keep the peace in galaxy?";
+$LNG['mission_event_pirate_obj'] = "Fully raid %s Pirate Stations";
+$LNG['mission_event_pirate_help'] = "<table><tr><td>Fully raid means you have to take all resources from a station and completely destroy the fleet stationed there</td></tr></table>";
+###### The Fallen Order
+$LNG['mission_event_fallen_empire_conquered'] = "An Awaken Empire";
+$LNG['mission_event_fallen_empire_conquered_obj'] = "Conquer a total of %s Fallen planets or megastructures";
+###### The Fallen Order
+$LNG['mission_event_fallen_empire'] = "The Fallen Order";
+$LNG['mission_event_fallen_empire_desc'] = "Fallen Empires are millennia old extremely powerful AI empires that have become stagnant over the ages. Due to their large and powerful fleets they should not be provoked until your fleet strength and technology is comparable. In order to spread our legends across the universe as the Fallen Empires did, first we have to look like them. Conquer each megastructure type from Fallen Empires.";
+###### Space Dragon
+$LNG['mission_event_space_dragon'] = "Space Dragon";
+$LNG['mission_event_space_dragon_desc'] = "Around the galaxy you can find a guardian of the universe called Space Dragon! This event allows you to acquire unique modules for your custom ship/defense! You must search for Space Dragon on Galaxy and attack him. On each attack, his coordinates are relocated. Even if you lose, you can get his rewards, but at very low chance. Only you can collect the debris of your space dragon.";
+###### Space Dragon
+$LNG['mission_space_dragon'] = "Space Dragon";
+$LNG['mission_space_dragon_1'] = "Event";
+$LNG['mission_space_dragon_1_desc'] = "Around the galaxy you can find a guardian of the universe called Space Dragon! This event allows you to acquire unique modules for your custom ship/defense! You must search for Space Dragon on Galaxy and attack him. On each attack, his coordinates are relocated. Even if you lose, you can get his rewards, but at very low chance. Only you can collect the debris of your space dragon.";
 ###### Paradise Found
 $LNG['mission_gaia'] = "Paradise Found";
 $LNG['mission_gaia_end'] = "You have completed this mission";
@@ -602,46 +857,32 @@ $LNG['mission_reconquista'] = "Veni, Vidi, Vici";
 $LNG['mission_reconquista_end'] = "You have completed this mission. You have conquered a megastructure from other player";
 $LNG['mission_reconquista_1_desc'] = "Venimus, Vidimus, Deus Vicit";
 $LNG['mission_reconquista_1_obj'] = "<ul><li>Conquer a planet or structure previously owned by a player</li></ul>";
-###### The Fallen Order
-$LNG['mission_awaken'] = "The Fallen Order";
-$LNG['mission_awaken_end'] = "You have completed this mission. You have conquered one megastructure of a kind from Fallen Empires.";
-$LNG['mission_awaken_1_desc'] = "In order to spread our legends across the universe as the Fallen Empires did, first we have to look like them.";
-$LNG['mission_awaken_1_obj'] = "<ul><li>Conquer each type of megastructure from Fallen Empires</li></ul>";
 ###### Collector
 $LNG['mission_collector'] = "The Resource Collector";
 $LNG['mission_collector_desc'] = "An insightful emperor only raids when there is no another peaceful ways to loot raw materials. You can proof yourself as one by collecting debris around the galaxy. Can you be one of them?";
 $LNG['mission_collector_obj'] = "<ul><li>Collect %s more resources from debris</li></ul>";
 ###### Warmonger
 $LNG['mission_warmonger'] = "Warmonger";
-$LNG['mission_warmonger_desc'] = "Other emperors... Instead of being peaceful, they are total warmongers. They seek destruction and blood, there is no way to run away from them. Do you have a deathwish to be a pirate?";
+$LNG['mission_warmonger_desc'] = "Acting as a mercenary, killing for profit, can be a way of living.";
 $LNG['mission_warmonger_obj'] = "Destroy a total of %s units.";
 ###### Expeditionist Fleet
-$LNG['mission_expe_fleet'] = "Lost Vessels";
-$LNG['mission_expe_fleet_desc'] = "We are not alone in the space. Sometimes while traveling far from our home, we find exiled species that seeks help and just need a home.";
-$LNG['mission_expe_fleet_obj'] = "Find a total of %s ships during expeditions.";
+$LNG['mission_expedition_fleet'] = "Lost Vessels";
+$LNG['mission_expedition_fleet_desc'] = "We are not alone in the space. Sometimes while traveling in nowhere, we find exiled species that seeks help and just need a home.";
+$LNG['mission_expedition_fleet_obj'] = "Find a total of %s ships on Expedition.";
 ###### Modules
-$LNG['mission_expe_modules'] = "Ancient Fashionist";
-$LNG['mission_expe_modules_desc'] = "If we want to have the supreme ship of the universe, first we need to make it shine.";
-$LNG['mission_expe_modules_obj'] = "Find a total of %s modules for your ship/defense.";
+$LNG['mission_expedition_modules'] = "Module Hunter";
+$LNG['mission_expedition_modules_obj'] = "Acquire all possible modules. There are %s remaining to hunt.";
 ###### Modules
 $LNG['mission_stars'] = "Stareotypes";
 $LNG['mission_stars'] = "Have colonized your planets in all possible star types";
 $LNG['mission_stars'] = "Have colonized your planets in all possible star types";
 ###### Daily Mission
-$LNG['mission_daily_1'] = "%s Dark Matter";
-$LNG['mission_daily_1_desc'] = "Acquire bonus Dark Matter to sustain your empire needs.";
-$LNG['mission_daily_2'] = "%s Metal, %s Crystal & %s Deuterium";
-$LNG['mission_daily_2_desc'] = "Get bonus resources for your loyalty.";
+$LNG['mission_daily'] = "Daily Rewards";
+$LNG['mission_daily_desc'] = "Login tommorow to acquire different reward on Stellaron!";
 $LNG['mission_daily_3'] = "Random Ship/Defense Module";
-$LNG['mission_daily_3_desc'] = "Get a decent module to equip in your ship/defense.";
-$LNG['mission_daily_4'] = "%s Dark Matter, %s Metal, %s Crystal & %s Deuterium";
-$LNG['mission_daily_4_desc'] = "Get both Dark Matter and resources to grow your empire.";
 $LNG['mission_daily_5'] = "5 Random Officier levels";
-$LNG['mission_daily_5_desc'] = "Acquire additional 5 levels on random Officier";
 $LNG['mission_daily_6'] = "Random Technology level";
-$LNG['mission_daily_6_desc'] = "Get one additional level in any research";
 $LNG['mission_daily_7'] = "All Boosts bonuses for 1 day";
-$LNG['mission_daily_7_desc'] = "Get all possible boosts for one day!";
 ###### Tutorial
 $LNG['mission_tutorial'] = "Tutorial";
 /**/
@@ -681,25 +922,25 @@ $LNG['mission_tutorial_7_1'] = "Go to Galaxy Page, click where it says expeditio
 /**/
 $LNG['mission_tutorial_6'] = "Expanding the Empire";
 $LNG['mission_tutorial_6_desc'] = "You have already learned how to produces resources on your home planet, but it may not be enough. Develop new planets early on, to get hold of resources more quickly and to get hold of new building spaces. With this, you can also have a powerful device to protect your resources from enemy attacks.";
-$LNG['mission_tutorial_6_0'] = "Go to Galaxy Page and select any position that does not have a planet and click on colonize button <i>OR</i>Send colony ship to desired coordinates from Fleet Page and you can add some resources to the ship, if you want to transfer resources to the new colony.";
+$LNG['mission_tutorial_6_help'] = "Go to Galaxy Page and select any position that does not have a planet and click on colonize button <i>OR</i>Send colony ship to desired coordinates from Fleet Page and you can add some resources to the ship, if you want to transfer resources to the new colony.";
 $LNG['mission_tutorial_6_1'] = "Develop the Expedition Research to level %s";
 $LNG['mission_tutorial_6_2'] = "Build %s Colony Ship";
 $LNG['mission_tutorial_6_3'] = "Send colonization mission and wait for Colonization Report";
 /**/
 $LNG['mission_tutorial_8'] = "Challenge the Empire";
 $LNG['mission_tutorial_8_desc'] = "If you have found a target worth your time through spying unknown planets, you will only have to decide which ships you want to attack with. The most efficient composition of the attacking fleet always depends on the choice of the target and the type of attack. If you want to raid a small amount of resources from a lightly guarded planet, a sufficient amount of cargoes and a few battleships to protect those would normally suffice. But if you want to kill a large fleet or attack a heavily defended planet, you will have to send many more ships in order to destroy the enemy.";
-$LNG['mission_tutorial_8_0'] = "<table><tr><td>Expand your research and build better ships.</td></tr><tr><td>Go to Galaxy Page and spy any target from it.</td></tr><tr><td>From Fleet Page, send ships against the coordinates of your target and select Attack mission.</td></tr><tr><td>We recommend you attack an Asteroid since they are warmless.</td></tr></table>";
+$LNG['mission_tutorial_8_help'] = "<table><tr><td>Expand your research and build better ships.</td></tr><tr><td>Go to Galaxy Page and spy any target from it.</td></tr><tr><td>From Fleet Page, send ships against the coordinates of your target and select Attack mission.</td></tr><tr><td>We recommend you attack an Asteroid since they are warmless.</td></tr></table>";
 $LNG['mission_tutorial_8_1'] = "Attack someone and wait for Battle Report.";
 /**/
 $LNG['mission_tutorial_9'] = "Debris Field";
 $LNG['mission_tutorial_9_desc'] = "Sometimes when you are attacked or you attack someone, debris fields are formed from metal and crystal residues from destroyed ships. The decomposition of this debris offers you an important alternative method to win resources.";
 $LNG['mission_tutorial_9_1'] = "Build %s Recycler Ship";
 $LNG['mission_tutorial_9_2'] = "Recycle debris from a planet";
-$LNG['mission_tutorial_9_0'] = "<table><tr><td>Go to Galaxy Page, look at some debris around the planet and click on the debris</td></tr><tr><td>Click on <b><u>Recycle</u></b> from the Galaxy Page. If you have recyclers, it will be sent automatically</td></tr><tr><td>Wait for Recycle Report.</td></tr></table>";
+$LNG['mission_tutorial_9_help'] = "<table><tr><td>Go to Galaxy Page, look at some debris around the planet and click on the debris</td></tr><tr><td>Click on <b><u>Recycle</u></b> from the Galaxy Page. If you have recyclers, it will be sent automatically</td></tr><tr><td>Wait for Recycle Report.</td></tr></table>";
 /**/
 $LNG['mission_tutorial_10'] = "Moonmaker";
 $LNG['mission_tutorial_10_desc'] = "Ocasionally during the greatest fights, an heavy asteroid belt becomes on the planet orbit, allowing them to collide with each other and form a moon. A moon is important since it has 2 unique buildings: Phalanx Sensor (you can see what other players are doing with) or and Jumpgate (transfer ships instantly between moons). <b>Moon is a very important fleeting tool</b> since players can not use Phalanx against others moons.";
-$LNG['mission_tutorial_10_0'] = "<table><tr><td>Ask a friend to attack you with multiple waves or Light Fighter or Spy Probes <i>OR</i> Buy a moon in Overview page, by clicking in '+ Moon'.</td></tr></table>";
+$LNG['mission_tutorial_10_help'] = "<table><tr><td>Ask a friend to attack you with multiple waves or Light Fighter or Spy Probes <i>OR</i> Buy a moon in Overview page, by clicking in '+ Moon'.</td></tr></table>";
 $LNG['mission_tutorial_10_1'] = "Have a Moon in any of your planets";
 /**/
 $LNG['mission_tutorial_11'] = "Nanite Factory";
@@ -728,21 +969,21 @@ $LNG['mission_ancient_2_desc'] = "After exploring Ancient technology, you are ab
 $LNG['mission_ancient_2_1'] = "Go to Shipyard and create your own ship or defense";
 $LNG['mission_ancient_2_2'] = "Find a Module through Expedition Mission";
 $LNG['mission_ancient_2_3'] = "Equip any module";
-$LNG['mission_ancient_2_0'] = "<table><tr><td>After you acquire the first level of Ancient Technology, you can level up it on Research Page. Higher the Ancient Tech, better modules you can find for your both ship and defense</td></tr></table>";
+$LNG['mission_ancient_2_help'] = "<table><tr><td>After you acquire the first level of Ancient Technology, you can level up it on Research Page. Higher the Ancient Tech, better modules you can find for your both ship and defense</td></tr></table>";
 /**/
 $LNG['mission_ancient_3'] = "Macro-Engineering";
 $LNG['mission_ancient_3_desc'] = "After exploring the secrets of ancient technology, your scientists have found blueprints of an huge ship capable to be a portable shipyard. This unique shipyard allows you to develop unique planet-like stations to extend your empire influence.";
 $LNG['mission_ancient_3_1'] = "Build %s Megaengineer on Shipyard";
 $LNG['mission_ancient_3_2'] = "Research Habitat Blueprints to level %s";
 $LNG['mission_ancient_3_3'] = "Colonize a Habitat Ship in a empty system of the galaxy";
-$LNG['mission_ancient_3_0'] = "<table><tr><td>This mission teach you to create the first Megastructure, the Habitat Ship. This megastructure acts like a planet that can change coordinates every hour. Another additional megastructures ae available such Science Nexus, Dyson Sphere and Ringworld.</td></tr><tr><td>Science Nexus is a huge planet radar, allowing you to see planets and their surface resources from the galaxy, in order to improve you gameplay pace</td></tr><tr><td>Dyson Sphere allows you to produce Dark Matter in order to purchase additional bonuses from the game</td></tr><tr><td>Ringworld is the most powerful planet-like megastructure in terms of resource production, this huge ring has its orbit in a sun and acts as planet and moon at once</td></tr></table>";
+$LNG['mission_ancient_3_help'] = "<table><tr><td>This mission teach you to create the first Megastructure, the Habitat Ship. This megastructure acts like a planet that can change coordinates every hour. Another additional megastructures ae available such Science Nexus, Dyson Sphere and Ringworld.</td></tr><tr><td>Science Nexus is a huge planet radar, allowing you to see planets and their surface resources from the galaxy, in order to improve you gameplay pace</td></tr><tr><td>Dyson Sphere allows you to produce Dark Matter in order to purchase additional bonuses from the game</td></tr><tr><td>Ringworld is the most powerful planet-like megastructure in terms of resource production, this huge ring has its orbit in a sun and acts as planet and moon at once</td></tr></table>";
 /**/
 $LNG['mission_ancient_4'] = "Galatic Wonders";
 $LNG['mission_ancient_4_desc'] = "Such megastructures are colossal constructions! Expensive and time-consuming to build or repair, these remarkable feats of engineering are nonetheless important wonders that provide large bonuses, demonstrating the technological and economic primacy of the builders empire.";
 $LNG['mission_ancient_4_1'] = "Colonize a Science Nexus in a empty system of the galaxy";
 $LNG['mission_ancient_4_2'] = "Colonize a Dyson Sphere in a empty system of the galaxy";
 $LNG['mission_ancient_4_3'] = "Colonize a Ringworld in a empty system of the galaxy";
-$LNG['mission_ancient_4_0'] = "<table><tr><td>Science Nexus is a huge planet radar, allowing you to see planets and their surface resources from the galaxy, in order to improve you gameplay pace</td></tr><tr><td>Dyson Sphere allows you to produce Dark Matter in order to purchase additional bonuses from the game</td></tr><tr><td>Ringworld is the most powerful planet-like megastructure in terms of resource production, this huge ring has its orbit in a sun and acts as planet and moon at once</td></tr></table>";
+$LNG['mission_ancient_4_help'] = "<table><tr><td>Science Nexus is a huge planet radar, allowing you to see planets and their surface resources from the galaxy, in order to improve you gameplay pace</td></tr><tr><td>Dyson Sphere allows you to produce Dark Matter in order to purchase additional bonuses from the game</td></tr><tr><td>Ringworld is the most powerful planet-like megastructure in terms of resource production, this huge ring has its orbit in a sun and acts as planet and moon at once</td></tr></table>";
 /**/
 $LNG['mission_tutorial_21'] = "Forgotten Legends";
 $LNG['mission_tutorial_21_desc'] = "As long you explore the galaxy, you may face yourself in the galaxy some megastructures with different colors. They are mainly owned by Fallen Empires, a moderate difficult A.I. player, or by players because you can conquer those structures later. But lets start by spying the Fallen ones.";
@@ -756,18 +997,6 @@ $LNG['mission_tutorial_23_obj'] = "<ul><li>Conquer a Fallen Empire owned megastr
 $LNG['mission_tutorial_24'] = "The Comeback";
 $LNG['mission_tutorial_24_desc'] = "Fallen Empires will not forget what you have done to them. Be aware you can only conquer players planets or structures that were once conquered and vice-versa. Level up Empire Complex to reduce the prosperity lost if you lose the fight.";
 $LNG['mission_tutorial_24_obj'] = "<ul><li>Survive a Fallen Empire reconquest</li></ul>";
-###### Space Dragon
-$LNG['mission_space_dragon'] = "Space Dragon";
-$LNG['mission_space_dragon_1'] = "Event";
-$LNG['mission_space_dragon_1_desc'] = "Around the galaxy you can find a guardian of the universe called Space Dragon! This event allows you to acquire unique modules for your custom ship/defense! You must search for Space Dragon on Galaxy and attack him. On each attack, his coordinates are relocated. Even if you lose, you can get his rewards, but at very low chance. Only you can collect the debris of your space dragon.";
-###### Fallen Empire
-$LNG['mission_fallen_empire'] = "Fallen Empires";
-$LNG['mission_fallen_empire_1'] = "Event";
-$LNG['mission_fallen_empire_1_desc'] = "Fallen Empires are millennia old extremely powerful AI empires that have become stagnant over the ages. Due to their large and powerful fleets they should not be provoked until your fleet strength and technology is comparable.";
-$LNG['mission_fallen_empire_1_1'] = "Attack and conquer a Fallen Habitat Ship on Galaxy";
-$LNG['mission_fallen_empire_1_2'] = "Attack and conquer a Fallen Ringworld on Galaxy";
-$LNG['mission_fallen_empire_1_3'] = "Attack and conquer a Fallen Gaia Planet on Galaxy";
-$LNG['mission_fallen_empire_1_4'] = "Attack and conquer a Fallen Machine Planet on Galaxy";
 
 ###################################
 ###################################
@@ -1092,15 +1321,13 @@ $LNG['longDescription'][709] = "Protects all your planets from foreign attack. C
 $LNG['shortDescription'][710] = "Reduce now the waiting time for Expedition missions!";
 $LNG['longDescription'][710] = "Reduce now the waiting time for Expedition missions!";
 
-
-
-
-###### User-based for custom ships/defense
-/**/	$LNG['shortNames'][10001] = "Ancient Mothership";
+/**/
+$LNG['shortNames'][10001] = "Ancient Mothership";
 $LNG['tech'][10001] = "Ancient Mothership";
 $LNG['shortDescription'][10001] = "The Mothership it's one of the major creation of the Ancient Technology. The hull of Mothership it's so versatile that allow us to design and customize a ship to fit on our needs.";
 $LNG['longDescription'][10001] = "The Mothership it's one of the major creation of the Ancient Technology. The hull of Mothership it's so versatile that allow us to design and customize a ship to fit on our needs.";
-/**/	$LNG['shortNames'][20001] = "Ancient Defense Platform";
+/**/
+$LNG['shortNames'][20001] = "Ancient Defense Platform";
 $LNG['tech'][20001] = "Ancient Defense Platform";
 $LNG['shortDescription'][20001] = "The Ancient Defense Platform it's one of the major creation of the Ancient Technology. The hull of Mothership it's so versatile that allow us to design and customize a defense to fit on our needs.";
-$LNG['longDescription'][20001] = "The Ancient Defense Platform it's one of the major creation of the Ancient Technology. The hull of Mothership it's so versatile that allow us to design and customize a defense to fit on our needs.";$LNG['shortNames'][10003] = "Dragonar";$LNG['tech'][10003] = "Dragonarspace";$LNG['shortDescription'][10003] = "Ultra Spaceship";$LNG['longDescription'][10003] = "This vessel has the strongest weapons and shields and its speed is the fastest in space";
+$LNG['longDescription'][20001] = "The Ancient Defense Platform it's one of the major creation of the Ancient Technology. The hull of Mothership it's so versatile that allow us to design and customize a defense to fit on our needs.";
